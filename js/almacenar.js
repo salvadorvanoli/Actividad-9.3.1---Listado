@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let agregar = document.getElementById("agregar");
     let item = document.getElementById("item");
     let limpiar = document.getElementById("limpiar");
-    let datos = JSON.parse(localStorage.getItem("array"));
+    let datos = JSON.parse(localStorage.getItem("array")) || [];
     if (datos) {
         escribirLista(datos);
     }
